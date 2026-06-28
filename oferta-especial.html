@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial — 50% de Desconto | Gesso Lucrativo</title>
+    <meta name="description" content="Oferta exclusiva por tempo limitado. Método Gesso Lucrativo com 50% de desconto!">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: #4a4a4a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+            position: relative;
+            background-image: url('images/bg.webp');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        img { max-width: 100%; display: block; object-fit: cover; }
+
+        /* ── Page wrapper ── */
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem 1.2rem 4rem;
+            min-height: 100vh;
+        }
+
+        /* ── Main card ── */
+        .offer-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            border: 1.5px solid #ecdada;
+            box-shadow: 0 20px 60px rgba(177, 108, 109, 0.12);
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: 0;
+        }
+
+        /* ── TOP BADGE ── */
+        .badge-top {
+            background: linear-gradient(135deg, #b16c6d, #c98889);
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 0.45rem 1.4rem;
+            border-radius: 50px;
+            margin-top: -1px;
+            margin-top: 1.6rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            box-shadow: 0 4px 14px rgba(177, 108, 109, 0.35);
+        }
+
+        /* ── TIMER ── */
+        .timer-section {
+            padding: 1.2rem 2rem 0;
+        }
+
+        .timer-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #9c6c6d;
+            margin-bottom: 0.6rem;
+        }
+
+        .timer-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+
+        .timer-block {
+            background: #97B5C6;
+            color: #fff;
+            font-size: 1.9rem;
+            font-weight: 800;
+            border-radius: 10px;
+            width: 62px;
+            height: 62px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .timer-block span.unit {
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+
+        .timer-separator {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #97B5C6;
+            margin-bottom: 8px;
+        }
+
+        /* ── HEADLINE ── */
+        .offer-headline {
+            font-size: 1.65rem;
+            font-weight: 800;
+            color: #b16c6d;
+            line-height: 1.25;
+            padding: 1.4rem 1.8rem 0;
+            letter-spacing: -0.02em;
+        }
+
+        .offer-headline .percent {
+            color: #7ee04c;
+            -webkit-text-stroke: 1px #3a7a1a;
+        }
+
+        /* ── SUBTITLE ── */
+        .offer-subtitle-text {
+            font-size: 0.92rem;
+            color: #9c6c6d;
+            line-height: 1.55;
+            padding: 0.8rem 1.8rem 0;
+        }
+
+        .offer-subtitle-text .bold-pink {
+            font-weight: 700;
+            color: #b16c6d;
+        }
+
+        /* ── TRUST LINE ── */
+        .trust-line {
+            font-size: 0.82rem;
+            color: #97B5C6;
+            font-weight: 600;
+            padding: 0.6rem 1.8rem 0;
+            line-height: 1.45;
+        }
+
+        .trust-line strong {
+            color: #7b9db0;
+        }
+
+        /* ── WARNING LINE ── */
+        .warning-line {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #b16c6d;
+            padding: 0.5rem 1.8rem 0;
+        }
+
+        /* ── DIVIDER ── */
+        .divider {
+            width: calc(100% - 3.6rem);
+            height: 1px;
+            background: #ecdada;
+            margin: 1.2rem 1.8rem;
+        }
+
+        /* ── FEATURES GRID ── */
+        .features-section {
+            width: 100%;
+            padding: 0 1.4rem;
+        }
+
+        .features-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: #97B5C6;
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem;
+        }
+
+        .feature-item {
+            background: #f7f2f2;
+            border: 1.5px solid #ecdada;
+            border-radius: 12px;
+            padding: 0.9rem 0.7rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .feature-icon {
+            font-size: 1.3rem;
+        }
+
+        .feature-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #b16c6d;
+            line-height: 1.3;
+        }
+
+        /* ── PRICE AREA ── */
+        .price-section {
+            padding: 1.5rem 1.8rem 0;
+            width: 100%;
+        }
+
+        .old-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #b16c6d;
+            text-decoration: line-through;
+            opacity: 0.6;
+            margin-bottom: 0.1rem;
+        }
+
+        .new-price-label {
+            font-size: 0.85rem;
+            color: #9c6c6d;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+
+        .new-price {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #b16c6d;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .new-price .currency {
+            font-size: 1.4rem;
+            font-weight: 700;
+            vertical-align: top;
+            margin-top: 0.6rem;
+            display: inline-block;
+        }
+
+        .savings-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: #f0fde7;
+            border: 1.5px solid #7ee04c;
+            color: #3a7a1a;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 0.35rem 0.9rem;
+            border-radius: 50px;
+            margin-top: 0.7rem;
+        }
+
+        /* ── CTA BUTTON ── */
+        .cta-wrapper {
+            padding: 1.4rem 1.6rem;
+            width: 100%;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #7ee04c, #6ed040);
+            color: #1e3d0c;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 1.15rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(126, 224, 76, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            animation: pulse-btn 2.5s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(126, 224, 76, 0.55);
+            animation: none;
+        }
+
+        @keyframes pulse-btn {
+            0%, 100% { box-shadow: 0 8px 25px rgba(126, 224, 76, 0.4); }
+            50% { box-shadow: 0 8px 35px rgba(126, 224, 76, 0.65); }
+        }
+
+        /* ── GUARANTEE ── */
+        .guarantee-box {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #f7f2f2;
+            border: 1.5px solid #ecdada;
+            border-radius: 12px;
+            padding: 0.9rem 1.1rem;
+            margin: 0 1.6rem;
+            text-align: left;
+        }
+
+        .guarantee-icon {
+            font-size: 1.6rem;
+            flex-shrink: 0;
+        }
+
+        .guarantee-text {
+            font-size: 0.78rem;
+            color: #9c6c6d;
+            line-height: 1.45;
+        }
+
+        .guarantee-text strong {
+            font-weight: 700;
+            color: #b16c6d;
+            display: block;
+            margin-bottom: 0.1rem;
+        }
+
+        /* ── BOTTOM ALERT ── */
+        .alert-box {
+            background: #fff8e7;
+            border-top: 2px solid #f5c842;
+            padding: 0.9rem 1.4rem;
+            margin-top: 1.4rem;
+            font-size: 0.75rem;
+            color: #7a5c10;
+            line-height: 1.5;
+            width: 100%;
+        }
+
+        .alert-box strong {
+            font-weight: 700;
+        }
+
+        /* ── BRAND WATERMARK ── */
+        .brand-footer {
+            padding: 1rem 0 0.5rem;
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.4rem;
+            color: #b16c6d;
+            opacity: 0.5;
+        }
+
+        /* ── DECORATIVE BLOBS ── */
+        .blob {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(70px);
+            z-index: -1;
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        .blob-pink {
+            top: -5%;
+            left: -10%;
+            width: 340px;
+            height: 340px;
+            background: #ffd6d6;
+        }
+
+        .blob-blue {
+            bottom: -10%;
+            right: -10%;
+            width: 420px;
+            height: 420px;
+            background: #e6f7ff;
+        }
+
+        /* ── ANIMATE ON LOAD ── */
+        .offer-card {
+            animation: fadeUp 0.5s ease both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (min-width: 520px) {
+            .offer-headline { font-size: 2rem; }
+            .new-price { font-size: 3.8rem; }
+            .timer-block { width: 72px; height: 72px; font-size: 2.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Decorative blobs -->
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-blue"></div>
+
+    <div class="page-wrapper">
+        <div class="offer-card">
+
+            <!-- TOP BADGE -->
+            <div class="badge-top">⚡ Espera — Temos Algo Para Você</div>
+
+            <!-- COUNTDOWN TIMER -->
+            <div class="timer-section">
+                <p class="timer-label">Essa oferta some em:</p>
+                <div class="timer-display">
+                    <div class="timer-block">
+                        <span id="timer-min">14</span>
+                        <span class="unit">min</span>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-block">
+                        <span id="timer-sec">59</span>
+                        <span class="unit">seg</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEADLINE -->
+            <h1 class="offer-headline">
+                Não Vai Embora Sem Isso: <span class="percent">50% de Desconto</span> Exclusivo Para Você
+            </h1>
+
+            <!-- SUBTITLE -->
+            <p class="offer-subtitle-text">
+                Você quase foi embora... mas antes de sair, liberamos uma oferta que nunca disponibilizamos publicamente.<br>
+                O mesmo curso completo por exatamente <span class="bold-pink">metade do preço</span> — porque acreditamos que essa habilidade pode mudar sua vida.
+            </p>
+
+            <!-- TRUST LINE -->
+            <p class="trust-line">
+                Você já sabe o que o Método Gesso Lucrativo faz. Agora imagine ter tudo isso pagando apenas a metade. Isso não vai acontecer de novo —
+                <strong>é uma chance única, só aqui, só agora.</strong>
+            </p>
+
+            <!-- WARNING LINE -->
+            <p class="warning-line">⚠️ Se você fechar essa página, o desconto desaparece. O preço volta ao normal.</p>
+
+            <div class="divider"></div>
+
+
+            <!-- PRICE -->
+            <div class="price-section">
+                <p class="old-price">De R$ 37,60</p>
+                <p class="new-price-label">Por apenas</p>
+                <p class="new-price">
+                    <span class="currency">R$</span> 19,90
+                </p>
+                <div class="savings-badge">
+                    💰 Você economiza R$ 17,70 (51% OFF)
+                </div>
+            </div>
+
+            <!-- CTA BUTTON -->
+            <div class="cta-wrapper">
+                <a href="https://checkout.gessolucrativo.online/VCCL1O8SCXDB" class="cta-button">
+                    Sim! Quero o Desconto de 50% Agora
+                </a>
+            </div>
+
+            <!-- GUARANTEE -->
+            <div class="guarantee-box">
+                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-text">
+                    <strong>Garantia Sem Risco de 7 Dias</strong>
+                    Se você não ficar satisfeita por qualquer motivo, em qualquer momento nos 7 primeiros dias, eu devolvo cada centavo. Não precisa nem explicar o motivo. O risco é todo meu.
+                </div>
+            </div>
+
+            <!-- BRAND WATERMARK -->
+            <p class="brand-footer">Gesso Lucrativo</p>
+
+            <!-- BOTTOM ALERT -->
+            <div class="alert-box">
+                ⚠️ <strong>ÚLTIMA CHANCE:</strong> Se você fechar essa página, o desconto de 50% desaparece definitivamente. O preço volta para R$37,60 imediatamente. Esta é sua única e derradeira oportunidade.
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer — 14 min 59 sec
+        (function () {
+            var totalSeconds = 14 * 60 + 59;
+            var minEl = document.getElementById('timer-min');
+            var secEl = document.getElementById('timer-sec');
+
+            function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+            var interval = setInterval(function () {
+                if (totalSeconds <= 0) {
+                    clearInterval(interval);
+                    minEl.textContent = '00';
+                    secEl.textContent = '00';
+                    return;
+                }
+                totalSeconds--;
+                var m = Math.floor(totalSeconds / 60);
+                var s = totalSeconds % 60;
+                minEl.textContent = pad(m);
+                secEl.textContent = pad(s);
+            }, 1000);
+        })();
+    </script>
+</body>
+
+</html>
